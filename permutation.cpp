@@ -50,7 +50,7 @@ int main()
             if (a[j] > a[i-1])
             {
                 Swap(a[j],a[i-1]);
-                sapxeptang (a, n, i);
+                sapxeptang(a, n, i);
                 incauhinh(a, n);
                 break;
             }
