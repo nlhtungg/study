@@ -2,11 +2,16 @@
 
 using namespace std;
 
-int main(){
-    string s; cin >> s;
-    char a, b; cin >> a >> b;
-    for(int i=0;i<s.size();i++){
+string replace(string s, char a, char b){
+    for(int i=0;i<s.length();i++){
         if(s[i]==a) s[i]=b;
     }
-    cout << s;
+    return s;
+}
+
+int main(){
+    string x;
+    char a, b;
+    cin >> x >> a >> b;
+    cout << replace(x, a, b);
 }
